@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url('./1.jpg');
+        background-size: 100%;
+        
+    }
+    
+    ::placeholder{
+        color: white;
+    }
+    ::placeholder:focus{      
+        font-size: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+   .form {
+    background:#297fb983;
+    width: 300px;
+    margin:200px auto;
+    padding: 20px;
+    border-radius: 10px;
+   
+   }
+   .form input{
+        display: block;
+        margin: 10px auto;
+        
+   }
+    input[type="text"]{
+       width: 200px;
+       border: none;
+       outline: none;
+       text-align: center;
+       background: transparent;
+       border-bottom: 1px solid #fff;
+       padding: 10px;
+       color: #fff;
+   }
+    input[type="password"]{
+       width: 200px;
+       border: none;
+       outline: none;
+       text-align: center;
+       background: transparent;
+       border-bottom: 1px solid #fff;
+       padding: 10px;
+       color: #fff;
+       
+   }
+    input[type="text"]:focus{
+        width: 250px;
+        border-bottom: 1px solid #FD7272;
+        transition: .2s;
+    }
+    input[type="password"]:focus{
+        width: 250px;
+        border-bottom: 1px solid #FD7272;
+        transition: .2s;
+    }
+    input[type="submit"]{
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        width: 80px;
+        outline: none;
+    }
+    input[type="submit"]:hover{
+        background: #182C61;
+        transition: .4s;
+        color: white;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <input type="text" placeholder="Enter Name">
+        <input type="password" placeholder="Enter Password">
+        <input type="submit" value="Login">
+    </div>
+</body>
+</html>
